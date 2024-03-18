@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@use "../../global/forwards" as fw;
+
+.contents {
+    position: absolute;
+    width: 100%;
+    top: 85%;
+    background: linear-gradient(0deg, rgba(242,221,179,1) 0%, rgba(206,229,242,1) 100%);
+}
+
+.info {
+    background: url("../img/clowd_bg.png") no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    padding-top: 120px;
+    position: relative;
+
+    &__clowd {
+        position: absolute;
+        top: -200px;
+        width: 100vw;
+    }
+
+    &__text {
+        // padding-top: 50px;
+        text-align: center;
+        line-height: 2.5;
+    }
+
+    &__sky-official-link {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        justify-content: center;
+        border: 1px solid fw.$base_color;
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    &__img {
+        margin: 60px auto 0;
+        padding-bottom: 80px;
+    }
+}
+
+.test {
+    width: 100%;
+    height: auto;;
+}

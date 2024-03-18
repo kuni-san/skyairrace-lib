@@ -1,0 +1,42 @@
+.contents {
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  background: linear-gradient(0deg, rgb(242, 221, 179) 0%, rgb(206, 229, 242) 100%);
+}
+
+.info {
+  background: url("../img/clowd_bg.png") no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  padding-top: 120px;
+  position: relative;
+}
+.info__clowd {
+  position: absolute;
+  top: -200px;
+  width: 100vw;
+}
+.info__text {
+  text-align: center;
+  line-height: 2.5;
+}
+.info__sky-official-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  justify-content: center;
+  border: 1px solid #25598B;
+}
+.info__sky-official-link span {
+  font-size: 1rem;
+}
+.info__img {
+  margin: 60px auto 0;
+  padding-bottom: 80px;
+}
+
+.test {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=p-top.css.map */

@@ -10,49 +10,77 @@
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" /> -->
-    <link rel="stylesheet" href="/css/uikit.min.css" />
-    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/p-top.css" />
     <title>エアレライブラリ</title>
     <meta name="keywords" content="" />
     <meta name="description" content="skyエアレ―スの情報まとめサイトです。" />
 </head>
 <body>
-    <header>
-        <h1><img src="https://placehold.jp/200x45.png" alt="エアレライブラリ"></h1>
-        <a href="https://placehold.jp/30x30.png"></a>
+    <header class="l-header">
+        <div class="uk-flex uk-flex-between uk-flex-middle l-header__wrap">
+            <h1 class="uk-margin-remove"><a href="#"><img src="https://placehold.jp/200x45.png" alt="エアレライブラリ"></a></h1>
+            <p class="main__fpo-text">ー編集中です(゜-゜)ー</p>
+            <a href=""><img src="https://placehold.jp/30x30.png" alt=""> </a>
+        </div>
     </header>
-    <main>
-        <p>ー編集中です(゜-゜)ー</p>
-        <section>
-            <p>―――ようこそ、<br>#skyairrace<br>の世界へ。</p>
+    <main class="main">
+        <section class="kv">
+            <p class="kv__text">―――ようこそ、<br>&nbsp;&nbsp;#skyairrace<br>&nbsp;&nbsp;&nbsp;&nbsp;の世界へ。</p>
+            <div id="video-area" class="kv__movie">
+                <div class="kv__iframe-wrapper">
+                    <iframe class="kv__iframe" src="https://www.youtube.com/embed/Xi3Ffm82vlU?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;loop=1&amp;playlist=Xi3Ffm82vlU" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+                </div>
+                <!-- <video id="video" poster="img/kv_img_sample.jpg" webkit-playsinline playsinline muted autoplay loop> -->
+                  <!--
+                      poster：動画ファイルが利用できない環境で代替表示される画像
+                      webkit-playsinline：iOS 9までのSafari用インライン再生指定
+                      playsinline：iOS 10以降のSafari用インライン再生指定
+                      muted：音声をミュートさせる
+                      autoplay：動画を自動再生させる
+                      loop：動画をループさせる
+                      controls：コントロールバーを表示する
+                  -->
+                    <!-- <source src="video/kv_sample.mov" type="video/mov"> -->
+                    <!-- <source src="video/kv_sample2.mp4" type="video/mp4">
+                    <p>動画を再生できる環境ではありません。</p>
+                </video> -->
+            </div><!--/video-area-->
         </section>
-        <section>
-            <p>(仮)SKY AIR RACEとは、<br>「空を自由に飛ぶこと」<br>を目的とした、<br>“Sky星を紡ぐ子どもたち”*内で<br>行われている<br>非公式の大会です。</p>
-            <a href="https://www.thatskygame.com/ja/">*ゲーム Sky星を紡ぐ子どもたち 公式サイト<i></i></a>
-            <img src="https://placehold.jp/250x200.png" alt="">
-        </section>
-        <section>
-            <h2>About Here</h2>
-            <p>ここは有志による<br>
-                エアレ情報まとめサイトです。<br>
-                とらのこさんが始めたエアレ*から、<br>
-                （*混同を避けるため「本家エアレ」と<br>
-                呼ばれます）<br>
-                エアレS杯、エアレクロクラ、エアレAGなど<br>
-                今までに開催されたたくさんのコースと、<br>
-                それに役立つ技術の情報をまとめました。
-            </p>    
-            <p>このサイトが、<br>
-                空を翔けるあなたの羽の一部に<br>
-                なれますように。</p>
-            <p>「SKY AIR RACE」とは？</p>
-            <p>主催とらのこさんの理念を読む</p>
-            <img src="https://placehold.jp/150x140.png" alt="">
-        </section>
-        <section>
-            <h2>Contents List</h2>
-            <p>デザイン作成中</p>
-        </section>
+        <div class="contents">
+            <section class="info">
+                <img class="info__clowd" src="img/clowd_info.png" alt="">
+                <p class="info__text">(仮)SKY AIR RACEとは、<br>「空を自由に飛ぶこと」<br>を目的とした、<br>“Sky星を紡ぐ子どもたち”*内で<br>行われている<br>非公式の大会です。</p>
+                <a class="info__sky-official-link" href="https://www.thatskygame.com/ja/">*ゲーム Sky星を紡ぐ子どもたち 公式サイト<span class="material-symbols-outlined">open_in_new</span></a>
+                <img class="info__img" src="https://placehold.jp/250x200.png" alt="">
+            </section>
+            <section>
+                <h2>About Here</h2>
+                <p>ここは有志による<br>
+                    エアレ情報まとめサイトです。<br>
+                    とらのこさんが始めたエアレ*から、<br>
+                    （*混同を避けるため「本家エアレ」と<br>
+                    呼ばれます）<br>
+                    エアレS杯、エアレクロクラ、エアレAGなど<br>
+                    今までに開催されたたくさんのコースと、<br>
+                    それに役立つ技術の情報をまとめました。
+                </p>
+                <p>このサイトが、<br>
+                    空を翔けるあなたの羽の一部に<br>
+                    なれますように。</p>
+                <p>「SKY AIR RACE」とは？</p>
+                <p>主催とらのこさんの理念を読む</p>
+                <img src="https://placehold.jp/150x140.png" alt="">
+                <!-- <iframe width="315" height="560" src="https://www.youtube.com/embed/Xi3Ffm82vlU" title="kv #sky" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                
+            </section>
+            <section>
+                <h2>Contents List</h2>
+                <p>デザイン作成中</p>
+            </section>
+        </div>
     </main>
     <footer>
         <ul>
@@ -63,6 +91,6 @@
         <a href="#"><img src="https://placehold.jp/200x45.png" alt="エアレライブラリ"></a>
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="/js/uikit.min.js"></script>
+    <script src="js/uikit.min.js"></script>
 </body>
 </html>

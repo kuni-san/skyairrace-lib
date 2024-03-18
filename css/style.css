@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@font-face {}
+body, a, h1, h2, h3, h4, h5, h6 {
+  color: #25598B;
+}
+
+.l-header {
+  background-color: #25598B;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.l-footer {
+  background-color: #25598B;
+  height: 100px;
+}
+.l-footer__logo-area {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__logo-area {
+    font-size: 1rem;
+  }
+}
+.l-footer__logo-area a {
+  color: #FFF;
+}
+
+.main {
+  position: relative;
+  padding-top: 65px;
+}
+.main__fpo-text {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  color: #FFF;
+  font-size: 10px;
+}
+
+.kv {
+  position: relative;
+  height: 100vh;
+}
+.kv__text {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  left: calc(50% - 100px);
+  color: #eee;
+  top: 80px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.kv__movie {
+  position: fixed;
+  z-index: -1; /*最背面に設定*/
+  top: -10%;
+  right: -10px;
+  left: -10px;
+  bottom: 0;
+  overflow: hidden;
+}
+.kv__movie #video {
+  background: url("img/kv_img_sample.jpg") no-repeat;
+  /*天地中央配置*/
+  position: absolute;
+  z-index: -1;
+  top: -10%;
+  /*縦横幅指定*/
+  min-height: 100%;
+  min-width: 100%;
+}
+.kv__iframe-wrapper {
+  position: relative;
+  padding-bottom: 217.8%;
+  height: 0;
+  overflow: hidden;
+}
+.kv__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #CEE5F2;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  padding-bottom: 20px;
+}
+.sidebar::before {
+  content: "";
+  width: 100%;
+  height: 20px;
+  background-color: #25598B;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 1600px) {
+  .sidebar {
+    width: 260px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 320px;
+    top: 100px;
+    left: calc(50% - 160px);
+    padding-bottom: 10px;
+  }
+}
+.sidebar__title {
+  color: #FFF;
+  margin: 40px 20px;
+  text-align: center;
+  font-size: 45px;
+}
+@media screen and (max-width: 1600px) {
+  .sidebar__title {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar__title {
+    font-size: 2.2rem;
+    margin: 40px 0 10px;
+  }
+}
+.sidebar__title span {
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar__title span {
+    font-size: 2rem;
+  }
+}
+.sidebar__text {
+  color: #FFF;
+  padding: 30px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar__text {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar__text {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar__category {
+    display: none;
+  }
+}
+.sidebar__category-title {
+  color: #FFF;
+  background-color: #25598B;
+  padding: 15px;
+}
+.sidebar__category-group {
+  margin: 15px;
+}
+.sidebar__category-group li {
+  position: relative;
+  padding: 8px 8px 8px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.sidebar__category-group li::before {
+  content: "■";
+  padding-right: 8px;
+  color: #25598B;
+  position: absolute;
+  left: 5px;
+}
+.sidebar__category-group li:nth-child(even)::before {
+  transform: rotate(45deg);
+  display: inline-block;
+  padding-right: 0;
+  font-size: 15px;
+  left: 6px;
+}
+.sidebar__category-group li a {
+  color: #FFF;
+}
+.sidebar__forpresales-url {
+  padding: 8px 8px 8px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar__forpresales-url {
+    display: none;
+  }
+}
+.sidebar__forpresales-url a {
+  display: block;
+  color: #FFF;
+}
+
+.contents {
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  background: linear-gradient(0deg, rgb(242, 221, 179) 0%, rgb(206, 229, 242) 100%);
+}
+
+.info {
+  background: url("../img/clowd_bg.png") no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  padding-top: 120px;
+  position: relative;
+}
+.info__clowd {
+  position: absolute;
+  top: -200px;
+  width: 100vw;
+}
+.info__text {
+  text-align: center;
+  line-height: 2.5;
+}
+.info__sky-official-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  justify-content: center;
+  border: 1px solid #25598B;
+}
+.info__sky-official-link span {
+  font-size: 1rem;
+}
+.info__img {
+  margin: 60px auto 0;
+  padding-bottom: 80px;
+}
+
+.test {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
