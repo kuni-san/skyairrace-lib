@@ -21,19 +21,39 @@
   text-align: center;
   line-height: 2.5;
 }
-.info__sky-official-link {
+.info__link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.info__link-thatskygame {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
-  justify-content: center;
-  border: 1px solid #25598B;
+  border-bottom: 1px solid #25598B;
 }
-.info__sky-official-link span {
-  font-size: 1rem;
+.info__link-thatskygame span {
+  font-size: 0.8rem;
 }
 .info__img {
   margin: 60px auto 0;
   padding-bottom: 80px;
+}
+.info__teaser-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+.info__teaser {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .test {

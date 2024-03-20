@@ -22,13 +22,12 @@
     height: 100vh;
     // background-image: url(video/kv_sample.mp4);
     &__text {
-        position: absolute;
-        // z-index: 2;
+        position: fixed;
         width: 200px;
         text-align: center;
         left: calc(50% - 200px/2);
         color: #eee;
-        top: 80px;
+        top: 120px;
         text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
     }
 
@@ -62,8 +61,6 @@
         padding-bottom: 217.8%;
         height: 0;
         overflow: hidden;
-
-        
     }
 
     &__iframe {
