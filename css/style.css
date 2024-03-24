@@ -4,10 +4,31 @@ body, a, h1, h2, h3, h4, h5, h6 {
   color: #25598B;
 }
 
+.headline__title {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.headline__title::before, .headline__title::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #25598B;
+}
+
 .media__title {
   margin: 0 0 5px;
-  font-size: 13px;
+  font-size: 0.8rem;
   text-align: center;
+}
+.media__author {
+  font-size: 0.8rem;
+  margin: 5px 20px;
+  text-align: right;
 }
 
 .l-header {
@@ -235,22 +256,46 @@ body, a, h1, h2, h3, h4, h5, h6 {
   top: -200px;
   width: 100vw;
 }
+.info__en-catchcopy {
+  font-size: 1.5rem;
+  font-family: "WindSong", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 .info__text {
   text-align: center;
   line-height: 2.5;
 }
-.info__link-thatskygame {
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
-  border-bottom: 1px solid #25598B;
+.info__text--small {
+  text-align: center;
+  line-height: 2.5;
+  font-size: 0.9rem;
 }
-.info__link-thatskygame span {
+.info__link-wrapper {
+  text-align: center;
+}
+.info__link {
+  text-decoration: underline;
   font-size: 0.8rem;
+}
+.info__link span {
+  vertical-align: -2px;
+  font-size: 0.8rem;
+  padding-left: 2px;
+}
+.info__link-wiki {
+  text-decoration: underline;
+}
+.info__link-wiki span {
+  font-size: 0.9rem;
+  vertical-align: -3px;
+  padding-right: 2px;
 }
 .info__img {
-  margin: 60px auto 0;
-  padding-bottom: 80px;
+  margin: 40px auto 0;
+}
+.info__teaser {
+  margin-top: 60px;
 }
 .info__teaser-wrapper {
   position: relative;
@@ -260,7 +305,7 @@ body, a, h1, h2, h3, h4, h5, h6 {
   width: 90%;
   margin: auto;
 }
-.info__teaser {
+.info__teaser-content {
   position: absolute;
   top: 0;
   left: 0;
