@@ -2,25 +2,9 @@
 
 @use "../global/forwards" as fw;
 
-.main {
-    // background-color: fw.$sub_color;
-    position: relative;
-    padding-top: 65px;
-
-    &__fpo-text {
-        text-align: center;
-        padding: 10px 0;
-        margin: 0;
-        color: #FFF;
-        font-size: 10px;
-    }
-}
-
-
 .kv {
-    position: relative;
-    height: 100vh;
-    // background-image: url(video/kv_sample.mp4);
+    height: 82vh;
+
     &__text {
         position: fixed;
         width: 200px;
@@ -29,11 +13,12 @@
         color: #eee;
         top: 120px;
         text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+        z-index: -1;
     }
 
     &__movie {
         position: fixed;
-        z-index: -1;/*最背面に設定*/
+        z-index: -2;/*最背面に設定*/
         top: -10%;
         right: -10px;
         left: -10px;

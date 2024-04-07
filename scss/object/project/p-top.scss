@@ -3,15 +3,12 @@
 @use "../../global/forwards" as fw;
 
 .contents {
-    position: absolute;
-    width: 100%;
-    top: 85%;
     background: linear-gradient(0deg, rgba(242,221,179,1) 0%, rgba(206,229,242,1) 100%);
 }
 
 .info {
-    background: url("../img/clowd_bg.png") no-repeat;
-    background-position: center bottom;
+    background: url("../img/cloud_info_bg.png") no-repeat;
+    background-position: center;
     background-size: contain;
     padding-top: 120px;
     position: relative;
@@ -104,9 +101,21 @@
             background-color: fw.$base_color;
         }
     }
+
+    &--about {
+        background: url("../img/cloud_info_bg.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
 }
 
+
 .index {
+    background-image: url("../img/cloud_contents_bg.png");
+    background-size: cover;
+    margin-top: 60px;
+    padding-bottom: 40px;
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -124,11 +133,11 @@
         }
 
         &--know {
-            background-image: url("../img/IMG_0678.JPG");
+            background-image: url("../img/IMG_0678.jpg");
         }
 
         &--find {
-            background-image: url("../img/IMG_0812.JPG");
+            background-image: url("../img/IMG_0812.jpg");
         }
 
         &--hold {
@@ -210,11 +219,12 @@
 
     &__name {
         margin: 5px 0 0;
+        font-weight: bold;
     }
 
     &__text {
         font-size: 0.625rem;
-        margin: 5px 0 10px;
+        margin: 2px 0 5px;
     }
 
 }
