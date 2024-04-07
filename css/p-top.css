@@ -89,8 +89,98 @@
   background-color: #25598B;
 }
 
-.index__title::before {
+.index__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  padding: 18px 25px;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.4);
+}
+.index__wrapper--fly {
+  background-image: url("../img/IMG_5550.JPG");
+}
+.index__wrapper--know {
+  background-image: url("../img/IMG_0678.JPG");
+}
+.index__wrapper--find {
+  background-image: url("../img/IMG_0812.JPG");
+}
+.index__wrapper--hold {
+  background-image: url("../img/IMG_6200.JPG");
+}
+.index__contents {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.5s;
+}
+.index__contents::before {
   content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #25598B;
+  opacity: 0.7;
+  top: 0;
+  left: 15px;
+}
+.index__contents:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.index__a {
+  display: block;
+  padding: 8px 0;
+  transition: opacity 0.5s;
+}
+.index__a:hover {
+  opacity: 0.8;
+}
+.index__title {
+  text-align: left;
+  padding-left: 2em;
+  font-size: 1rem;
+  margin: 30px 0 10px;
+}
+.index__mark {
+  font-size: 1.5rem;
+}
+.index__mark::before {
+  content: "";
+  background-image: url(https://placehold.jp/35x35.png);
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
+}
+.index__mark::after {
+  content: "";
+  width: 10px;
+  height: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #25598B;
+  margin: 0 8px 0 20px;
+}
+.index__icon {
+  display: inline;
+}
+.index__name {
+  margin: 5px 0 0;
+}
+.index__text {
+  font-size: 0.625rem;
+  margin: 5px 0 10px;
 }
 
 .test {

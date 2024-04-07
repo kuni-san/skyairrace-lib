@@ -107,12 +107,116 @@
 }
 
 .index {
-    &__title {
-        &::before {
-            content: "";
-            
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+        padding: 18px 25px;
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.4);
+
+        &--fly {
+            background-image: url("../img/IMG_5550.JPG");
+        }
+
+        &--know {
+            background-image: url("../img/IMG_0678.JPG");
+        }
+
+        &--find {
+            background-image: url("../img/IMG_0812.JPG");
+        }
+
+        &--hold {
+            background-image: url("../img/IMG_6200.JPG");
         }
     }
+
+    &__contents {
+        text-align: center;
+        background-color: rgba(255, 255, 255, .8);
+        margin: auto;
+        width: 100%;
+        border-radius: 8px;
+        position: relative;
+        backdrop-filter: blur(4px);
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
+        transition: background-color .5s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 100%;
+            background-color: fw.$base_color;
+            opacity: 0.7;
+            top: 0;
+            left: 15px;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .6);
+        }
+    }
+
+    &__a {
+        display: block;
+        padding: 8px 0;
+        transition: opacity .5s;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    &__title {
+        text-align: left;
+        padding-left: 2em;
+        font-size: 1rem;
+        margin: 30px 0 10px;
+    }
+
+    &__mark {
+        font-size: 1.5rem;
+
+        &::before {
+            content: "";
+            background-image: url(https://placehold.jp/35x35.png);
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 8px;
+        }
+
+        &::after {
+            content: "";
+            width: 10px;
+            height: 1px;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: fw.$base_color;
+            margin: 0 8px 0 20px;
+        }
+    }
+
+    &__icon {
+        display: inline;
+    }
+
+    &__name {
+        margin: 5px 0 0;
+    }
+
+    &__text {
+        font-size: 0.625rem;
+        margin: 5px 0 10px;
+    }
+
 }
 
 .test {
