@@ -57,6 +57,10 @@ a:hover {
   position: fixed;
   z-index: 100;
 }
+#g-nav {
+  background-color: #25598B;
+}
+
 .l-footer {
   background-color: #25598B;
   height: 120px;
