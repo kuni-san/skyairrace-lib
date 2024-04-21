@@ -19,10 +19,12 @@
   font-family: "WindSong", cursive;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
 }
 .info__text {
   text-align: center;
-  line-height: 2.5;
+  line-height: 2;
+  font-size: 14px;
 }
 .info__text--small {
   text-align: center;
@@ -186,6 +188,7 @@
 .index__name {
   margin: 5px 0 0;
   font-weight: bold;
+  font-size: 1rem;
 }
 .index__text {
   font-size: 0.625rem;
