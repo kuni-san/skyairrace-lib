@@ -3,9 +3,9 @@
     position:fixed;
     z-index: 999;
     /*ナビのスタート位置と形状*/
-	top:0;
-    right: -120%;
-	width:100%;
+	top: 65px;
+    right: -80%;
+    width: 70%;
     height: 100vh;/*ナビの高さ*/
     /*動き*/
 	transition: all 0.6s;
@@ -21,7 +21,7 @@
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
     z-index: 999; 
-    width: 100%;
+    width: 70%;
     height: 100vh;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -30,30 +30,33 @@
 /*ナビゲーション*/
 #g-nav ul {
     /*ナビゲーション天地中央揃え*/
-    position: absolute;
+    /* position: absolute;
     z-index: 999;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); */
 }
 
 /*リストのレイアウト設定*/
 
 #g-nav p {
     color: #FFF;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 3px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 #g-nav li{
 	list-style: none;
-    text-align: center;
+    padding-left: 1em;
 }
 
-#g-nav li a{
+#g-nav li .g-nav-link{
 	color: #FFF;
 	text-decoration: none;
-	padding:10px;
+	padding: 5px;
 	display: block;
-	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
 
