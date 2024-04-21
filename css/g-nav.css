@@ -25,7 +25,6 @@
     height: 78vh;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    padding-left: 15px;
 }
 
 /*ナビゲーション*/
@@ -59,6 +58,10 @@
 	padding: 5px;
 	display: block;
 	letter-spacing: 0.1em;
+}
+
+#g-nav .fa-caret-right {
+    padding-right: 8px;
 }
 
 /*========= ボタンのためのCSS ===============*/
