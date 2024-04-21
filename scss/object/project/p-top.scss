@@ -24,16 +24,19 @@
         font-family: "WindSong", cursive;
         font-weight: 400;
         font-style: normal;
+        text-align: center;
     }
 
     &__text {
         text-align: center;
-        line-height: 2.5;
+        line-height: 2;
+        font-size: 14px;
+
 
         &--small {
             text-align: center;
             line-height: 2.5;
-            font-size: 0.9rem;
+            font-size: 0.9rem;  
         }
     }
 
@@ -220,6 +223,7 @@
     &__name {
         margin: 5px 0 0;
         font-weight: bold;
+        font-size: 1rem;
     }
 
     &__text {
