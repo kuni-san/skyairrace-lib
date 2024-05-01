@@ -2,8 +2,12 @@
 
 @use "../../global/forwards" as fw;
 
-.contents {
-    background: linear-gradient(0deg, rgba(242,221,179,1) 0%, rgba(206,229,242,1) 100%);
+.top {
+    background: none;
+
+    &__contents {
+        background: linear-gradient(0deg, rgba(242,221,179,1) 0%, rgba(206,229,242,1) 100%);
+    }
 }
 
 .info {

@@ -12,6 +12,7 @@ a:hover {
 .main {
   position: relative;
   padding-top: 65px;
+  background: linear-gradient(0deg, rgb(242, 221, 179) 0%, rgb(206, 229, 242) 100%);
 }
 .main__fpo-text {
   text-align: center;
@@ -21,7 +22,7 @@ a:hover {
   font-size: 10px;
 }
 
-.headline__title {
+.common__title {
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
@@ -33,11 +34,16 @@ a:hover {
   font-weight: 400;
   font-style: normal;
 }
-.headline__title::before, .headline__title::after {
+.common__title::before, .common__title::after {
   content: "";
   width: 10px;
   height: 2px;
   background-color: #25598B;
+}
+.common__index {
+  background-color: #25598B;
+  border-start-end-radius: 5px 0;
+  color: #FFF;
 }
 
 .media__title {

@@ -1,4 +1,7 @@
-.contents {
+.top {
+  background: none;
+}
+.top__contents {
   background: linear-gradient(0deg, rgb(242, 221, 179) 0%, rgb(206, 229, 242) 100%);
 }
 
