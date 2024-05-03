@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@use "../../global/forwards" as fw;
+
+.toranoko {
+    .common__index {
+        i {
+            margin-right: 1px;
+            width: 15px;
+            text-align: center;
+            font-size: 11px;
+        }
+
+        .fa-minus {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+
+        &::before {
+            top: 25px;
+        }
+    }
+
+    &__index {
+        padding: 25px 15px 5px;
+    }
+
+    &__title {
+        color: #FFF;
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+
+        &--crs {
+            display: block;
+            font-size: 20px;
+        }
+        &--no {
+            font-size: 24px;
+            padding: 0 3px;
+        }
+    }
+
+    &__about {
+        text-align: right;
+
+        p {
+            font-size: 13px;
+            margin: 5px;
+        }
+    }
+}

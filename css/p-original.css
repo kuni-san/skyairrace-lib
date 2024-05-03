@@ -1,0 +1,38 @@
+.toranoko .common__index i {
+  margin-right: 1px;
+  width: 15px;
+  text-align: center;
+  font-size: 11px;
+}
+.toranoko .common__index .fa-minus {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.toranoko .common__index::before {
+  top: 25px;
+}
+.toranoko__index {
+  padding: 25px 15px 5px;
+}
+.toranoko__title {
+  color: #FFF;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+.toranoko__title--crs {
+  display: block;
+  font-size: 20px;
+}
+.toranoko__title--no {
+  font-size: 24px;
+  padding: 0 3px;
+}
+.toranoko__about {
+  text-align: right;
+}
+.toranoko__about p {
+  font-size: 13px;
+  margin: 5px;
+}/*# sourceMappingURL=p-original.css.map */
