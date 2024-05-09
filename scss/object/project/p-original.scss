@@ -8,7 +8,7 @@
             margin-right: 1px;
             width: 15px;
             text-align: center;
-            font-size: 11px;
+            font-size: 0.675rem;
         }
 
         .fa-minus {
@@ -18,7 +18,7 @@
         }
 
         &::before {
-            top: 25px;
+            top: 20px;
         }
     }
 
@@ -29,15 +29,15 @@
     &__title {
         color: #FFF;
         margin: 0;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: bold;
 
         &--crs {
             display: block;
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         &--no {
-            font-size: 24px;
+            font-size: 1.4rem;
             padding: 0 3px;
         }
     }
@@ -46,8 +46,33 @@
         text-align: right;
 
         p {
-            font-size: 13px;
+            font-size: 0.8rem;
             margin: 5px;
         }
+    }
+
+    &__contents-wrap {
+        padding: 20px;
+    }
+
+    &__KK-wrap {
+        position: relative;
+        padding-top: 30px;
+    }
+
+    &__KK-title {
+        text-align: center;
+        margin: 0 0 3px;
+    }
+
+    &__KK-text {
+        position: absolute;
+        width: 30%;
+        top: 0;
+    }
+
+    &__KK-caption {
+        text-align: right;
+        font-size: 0.8rem;
     }
 }

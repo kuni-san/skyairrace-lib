@@ -81,6 +81,24 @@
         content: "";
       }
     }
+
+    &__headline {
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0 25px;
+      
+      &::before, &::after {
+        background-image: url("../img/common_hishi.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        content: "";
+        width: 10px;
+        height: 12px;
+        margin: 0 5px;
+      }
+    }
   }
 
   .media { 
