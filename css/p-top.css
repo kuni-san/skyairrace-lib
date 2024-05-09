@@ -119,7 +119,7 @@
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.4);
 }
 .index__wrapper--fly {
-  background-image: url("../img/content_bg_green.JPG");
+  background-image: url("../img/content_bg_green.jpg");
 }
 .index__wrapper--know {
   background-image: url("../img/content_bg_red.jpg");
@@ -128,7 +128,7 @@
   background-image: url("../img/content_bg_yellow.jpg");
 }
 .index__wrapper--hold {
-  background-image: url("../img/content_bg_navy.JPG");
+  background-image: url("../img/content_bg_navy.jpg");
 }
 .index__contents {
   text-align: center;
