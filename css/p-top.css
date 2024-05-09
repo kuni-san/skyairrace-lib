@@ -21,18 +21,22 @@
   font-size: 1.5rem;
   font-family: "WindSong", cursive;
   font-weight: 400;
-  font-style: normal;
   text-align: center;
+  position: absolute;
+  width: 100%;
+  top: -40px;
 }
 .info__text {
   text-align: center;
   line-height: 2;
-  font-size: 14px;
+  font-size: 0.9rem;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1450980392);
 }
 .info__text--small {
   text-align: center;
-  line-height: 2.5;
-  font-size: 0.9rem;
+  line-height: 2;
+  font-size: 0.7rem;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1450980392);
 }
 .info__link-wrapper {
   text-align: center;
@@ -50,9 +54,9 @@
   text-decoration: underline;
 }
 .info__link-wiki span {
-  font-size: 0.9rem;
-  vertical-align: -3px;
-  padding-right: 2px;
+  font-size: 0.7rem;
+  vertical-align: -2px;
+  padding: 0 2px 0 1px;
 }
 .info__img {
   margin: 40px auto 0;
@@ -115,16 +119,16 @@
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.4);
 }
 .index__wrapper--fly {
-  background-image: url("../img/IMG_5550.JPG");
+  background-image: url("../img/content_bg_green.JPG");
 }
 .index__wrapper--know {
-  background-image: url("../img/IMG_0678.jpg");
+  background-image: url("../img/content_bg_red.jpg");
 }
 .index__wrapper--find {
-  background-image: url("../img/IMG_0812.jpg");
+  background-image: url("../img/content_bg_yellow.jpg");
 }
 .index__wrapper--hold {
-  background-image: url("../img/IMG_6200.JPG");
+  background-image: url("../img/content_bg_navy.JPG");
 }
 .index__contents {
   text-align: center;
