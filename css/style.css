@@ -77,11 +77,19 @@ a:hover {
   height: 12px;
   margin: 0 5px;
 }
+.common__arrow-left {
+  vertical-align: -0.25em;
+}
 
 .media__title {
   margin: 0 0 5px;
   font-size: 0.8rem;
   text-align: center;
+}
+.media__title span {
+  font-size: 1rem;
+  vertical-align: -3px;
+  padding: 0 2px 0 3px;
 }
 .media__author {
   font-size: 0.8rem;
