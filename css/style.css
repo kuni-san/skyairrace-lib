@@ -12,7 +12,9 @@ a:hover {
 .main {
   position: relative;
   padding-top: 65px;
-  background: linear-gradient(0deg, rgb(242, 221, 179) 0%, rgb(206, 229, 242) 100%);
+  padding-bottom: 10px;
+  background: rgb(206, 230, 242);
+  background: linear-gradient(0deg, rgb(242, 221, 179) 20%, rgb(218, 241, 239) 42%, rgb(218, 241, 239) 50%, rgb(206, 230, 242) 60%);
 }
 .main__fpo-text {
   text-align: center;
