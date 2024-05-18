@@ -89,9 +89,6 @@
     }
 
     &__KK-caption {
-        text-align: right;
-        font-size: 0.8rem;
-
         .nicosan {
             width: 13px;
             display: inline;
@@ -105,6 +102,8 @@
         border: 1px solid rgba(37, 89, 139, 0.4);
         box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.25), inset 0px 10px 10px 0px rgba(255, 255, 255, 0.25);
     }
+
+
 }
 
 .ac-course {
@@ -130,9 +129,15 @@
         }
 
         /*　closeというクラスがついたら形状変化　*/
-        &.close::after{
-            transform: rotate(180deg);
+        &.close {
+            border-radius: 5px 5px 0 0;
+
+            &::after{
+                transform: rotate(180deg);
+            }
         }
+        
+        
     }
 
     &__contents {
@@ -142,7 +147,6 @@
 
 .ac-tech {
     display: grid;
-    gap: 4px;
     grid-template-columns: repeat(2, auto);
 
     &__index {
@@ -150,7 +154,7 @@
         cursor: pointer;
         font-size:1rem;
         font-weight: normal;
-        padding: 3% 3% 3% 50px;
+        padding: 3% 20px;
         transition: all .5s ease;
 
         /*アイコン*/
@@ -162,20 +166,24 @@
             background-image: url("../img/chevron-down-solid.svg");
             background-repeat: no-repeat;
             background-position: center;
-            top: 15px;
-            margin-left: 5px;
+            top: 12px;
+            margin: 0 10px;
         }
 
         /*　closeというクラスがついたら形状変化　*/
         &.close::after{
             transform: rotate(180deg);
         }
+
+        .grid-item {
+            text-align: center;
+        }
     }
 
     &__contents {
-        background: #f3f3f3;
-        margin:0 3% 3% 3%;
-        padding: 3%;
+        padding: 3% 3% 3% 30px;
+        border: 1px solid rgba(37, 89, 139, 0.4);
+        border-radius: 0 0 5px 5px;
 
         &.ac-tech__subgrid-container {
             display: none;/*はじめは非表示*/
@@ -186,5 +194,6 @@
         grid-column: span 2;
         display: grid;
         grid-template-columns: subgrid;
+        gap: 10px 30px;
     }
 }
