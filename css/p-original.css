@@ -5,11 +5,6 @@
   text-align: center;
   font-size: 0.675rem;
 }
-.toranoko .common__index .fa-minus {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-}
 .toranoko .common__index::before {
   top: 20px;
 }
@@ -93,13 +88,14 @@
 .ac-course__index::after {
   position: absolute;
   content: "";
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   background-image: url("../img/chevron-down-solid.svg");
   background-repeat: no-repeat;
   background-position: center;
-  top: 15px;
-  margin-left: 5px;
+  top: 14px;
+  margin-left: 6px;
+  color: #25598B;
 }
 .ac-course__index.close {
   border-radius: 5px 5px 0 0;
@@ -133,8 +129,9 @@
   background-image: url("../img/chevron-down-solid.svg");
   background-repeat: no-repeat;
   background-position: center;
-  top: 12px;
+  top: 14px;
   margin: 0 10px;
+  color: #25598B;
 }
 .ac-tech__index.close::after {
   transform: rotate(180deg);
@@ -146,6 +143,7 @@
   padding: 3% 3% 3% 30px;
   border: 1px solid rgba(37, 89, 139, 0.4);
   border-radius: 0 0 5px 5px;
+  border-top: none;
 }
 .ac-tech__contents.ac-tech__subgrid-container {
   display: none; /*はじめは非表示*/
