@@ -4,6 +4,7 @@
 
 .top {
     background: none;
+    padding-bottom: 0;
 
     &__contents {
         background: rgba(206, 230, 242, 1);
@@ -54,7 +55,7 @@
 
     &__link {
         text-decoration: underline;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         span {
             vertical-align: -2px;
             font-size: 0.8rem;

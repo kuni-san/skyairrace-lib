@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .top {
   background: none;
+  padding-bottom: 0;
 }
 .top__contents {
   background: rgb(206, 230, 242);
@@ -45,7 +46,7 @@
 }
 .info__link {
   text-decoration: underline;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .info__link span {
   vertical-align: -2px;
