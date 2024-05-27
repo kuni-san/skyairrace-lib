@@ -8,13 +8,13 @@
 }
 
 .info {
-  background: url("../img/cloud_info_bg.png") no-repeat;
+  background: url("../img/cloud06.png") no-repeat;
   background-position: center;
   background-size: contain;
-  padding-top: 120px;
+  padding-top: 260px;
   position: relative;
 }
-.info__clowd {
+.info__cloud {
   position: absolute;
   top: -200px;
   width: 100vw;
@@ -100,7 +100,7 @@
   margin-top: 100px;
 }
 .info--about {
-  background: url("../img/cloud_info_bg.png") no-repeat;
+  background: url("../img/cloud02.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
