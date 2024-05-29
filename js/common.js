@@ -17,12 +17,16 @@ $('.ac-tech__index').on('click', function() {//タイトル要素をクリック
       
     if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
         $(this).removeClass('close');//クラス名を除去し
-        $(findElm).slideUp();//アコーディオンを閉じる
+        $(findElm).slideUp({
+          start: function() {
+              $(this).parents('.ac-tech').find('.ac-tech__index').css('border-radius','5px');
+          }
+      });//アコーディオンを閉じる
     }else{//それ以外は
         $(this).addClass('close');//クラス名closeを付与し
         $(findElm).slideDown({
             start: function() {
-                $(this).css('display','grid');
+                $(this).parents('.ac-tech').find('.ac-tech__index').css('border-radius','5px 5px 0 0');
             }
         });//アコーディオンを開く
     }

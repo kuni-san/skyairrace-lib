@@ -11,12 +11,6 @@
             font-size: 0.675rem;
         }
 
-        // .fa-minus {
-        //     position: absolute;
-        //     right: 10px;
-        //     top: 5px;
-        // }
-
         &::before {
             top: 20px;
         }
@@ -101,9 +95,14 @@
         border-radius: 5px;
         border: 1px solid rgba(37, 89, 139, 0.4);
         box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.25), inset 0px 10px 10px 0px rgba(255, 255, 255, 0.25);
+        text-align: center;
     }
 
-
+    &__tech-contents {
+        a {
+            text-decoration: underline;
+        }
+    }
 }
 
 .ac-course {
@@ -137,8 +136,6 @@
                 transform: rotate(180deg);
             }
         }
-        
-        
     }
 
     &__contents {
@@ -147,15 +144,13 @@
 }
 
 .ac-tech {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
 
     &__index {
         position: relative;/*+マークの位置基準とするためrelative指定*/
         cursor: pointer;
         font-size:1rem;
         font-weight: normal;
-        padding: 3% 20px;
+        padding: 3% 20px 3% 5px;
         transition: all .5s ease;
 
         /*アイコン*/
@@ -176,10 +171,6 @@
         &.close::after{
             transform: rotate(180deg);
         }
-
-        .grid-item {
-            text-align: center;
-        }
     }
 
     &__contents {
@@ -187,16 +178,6 @@
         border: 1px solid rgba(37, 89, 139, 0.4);
         border-radius: 0 0 5px 5px;
         border-top: none;
-
-        &.ac-tech__subgrid-container {
-            display: none;/*はじめは非表示*/
-        }
-    }
-
-    &__subgrid-container {
-        grid-column: span 2;
-        display: grid;
-        grid-template-columns: subgrid;
-        gap: 10px 30px;
+        display: none;
     }
 }
