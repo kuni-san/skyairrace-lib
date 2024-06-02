@@ -103,6 +103,44 @@
             text-decoration: underline;
         }
     }
+
+    &__list {
+        counter-reset: number 0;
+        position: relative;
+
+        &--child {
+            padding-left: 2.4em;
+            background-image: url("../img/KAZAMIDORI.png");
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position-y: center;
+            margin-left: -5px !important;
+            margin-top: 15px !important;
+            position: relative;
+            background-color: rgba(255, 255, 255, .5);
+            background-blend-mode: lighten;
+
+            &::before{
+                counter-increment: number 1;      /* number カウンタを増加 */
+                content:counter(number)".";      /* 表示形式を指定 */
+                position: absolute;
+                left: 0.8em;
+                top: calc(50% - 0.9em);
+                font-size: 1.1rem;
+                text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+            }
+        }
+    }
+
+    &__point {
+        text-align: center;
+        text-decoration: underline;
+
+        span {
+            font-size: 1rem;
+            vertical-align: text-bottom;
+        }
+    }
 }
 
 .ac-course {
