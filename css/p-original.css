@@ -5,11 +5,8 @@
   text-align: center;
   font-size: 0.675rem;
 }
-.toranoko .common__index::before {
-  top: 20px;
-}
 .toranoko__index {
-  padding: 25px 15px 5px;
+  padding: 15px 15px 5px;
 }
 .toranoko__title {
   color: #FFF;
@@ -34,6 +31,7 @@
 }
 .toranoko__contents-wrap {
   padding: 20px;
+  padding-bottom: 0;
 }
 .toranoko__video-wrap {
   position: relative;
@@ -68,6 +66,9 @@
   display: inline;
   vertical-align: -2px;
 }
+.toranoko__tech {
+  margin-bottom: 60px;
+}
 .toranoko__tech-index {
   background-color: rgba(37, 89, 139, 0.4);
   border-radius: 5px;
@@ -89,7 +90,7 @@
   background-repeat: no-repeat;
   background-position-y: center;
   margin-left: -5px !important;
-  margin-top: 15px !important;
+  margin-top: 20px !important;
   position: relative;
   background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
@@ -111,14 +112,44 @@
   font-size: 1rem;
   vertical-align: text-bottom;
 }
+.toranoko__side-note {
+  border: 1px solid rgba(37, 89, 139, 0.4);
+  border-radius: 5px;
+  margin: 20px 15px 15px;
+  position: relative;
+  padding: 25px 0 5px;
+}
+.toranoko__side-note--title {
+  border-right: 1px solid rgba(37, 89, 139, 0.4);
+  border-bottom: 1px solid rgba(37, 89, 139, 0.4);
+  border-radius: 0 0 5px 0;
+  display: inline;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+}
+.toranoko__side-note p {
+  padding: 0 15px 0 calc(12px + 1em);
+  font-size: 0.8rem;
+  text-indent: -1em;
+  margin: 5px 0;
+}
 
 .ac-course__index {
-  position: relative; /*+マークの位置基準とするためrelative指定*/
+  position: relative;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: normal;
+  font-size: 1.2rem;
+  font-weight: bold;
   padding: 3%;
   transition: all 0.5s ease;
+  background-color: #25598B;
+  color: #FFF;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-radius: 0px 0px 10px 10px;
   /*アイコン*/
   /*　closeというクラスがついたら形状変化　*/
 }
@@ -132,10 +163,9 @@
   background-position: center;
   top: 14px;
   margin-left: 6px;
-  color: #25598B;
 }
 .ac-course__index.close {
-  border-radius: 5px 5px 0 0;
+  border-radius: 0;
 }
 .ac-course__index.close::after {
   transform: rotate(180deg);
@@ -164,10 +194,11 @@
   background-position: center;
   top: 14px;
   margin: 0 10px;
-  color: #25598B;
+  transform: rotate(-90deg);
+  transition: all 0.5s ease;
 }
 .ac-tech__index.close::after {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 .ac-tech__contents {
   padding: 3% 3% 3% 30px;

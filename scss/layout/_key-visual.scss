@@ -6,6 +6,7 @@
     height: 82vh;
 
     &__text {
+        display: none;
         // position: fixed;
         // width: 200px;
         // text-align: center;
@@ -37,6 +38,14 @@
             top: 0;
             left: 15px;
         }
+    }
+
+    &__symbol {
+        width: 46%;
+        margin-left: 26%;
+        margin-top: 15px;
+        position: fixed;
+        z-index: -1;
     }
 
     &__movie {
